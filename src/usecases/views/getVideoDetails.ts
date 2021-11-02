@@ -14,4 +14,6 @@ export const getVideoDetails = (videoId: number) => {
     .catch((error: any) => {
       console.log("Error occured", error);
     });
+
+    return getVideoDetailsResponse;
 };

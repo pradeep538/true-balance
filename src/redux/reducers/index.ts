@@ -33,7 +33,8 @@ export default function trelloReducer(
     case Actions.GET_VIDEO_RECOMENDATIONS:
       return { ...videoRecomendations(state, action.payload) };
     case Actions.GET_COMMENTS:
-      return { ...comments(state, action.payload) };
+      let updatedComments = comments(state, action.payload) 
+      return { ...updatedComments};
     case Actions.RESET_STORE:
       return initialState;
     default:

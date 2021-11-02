@@ -8,10 +8,10 @@ import ErrorBoundry from "./views/components/ErrorBoundry/ErrorBoundry";
 import useCaseInstance from "./usecases";
 import Api from "./network/api";
 
-declare const API_BASE_URL: string;
+
 
 function App() {
-  let apiInstance = new Api("truebalance.com" /* API_BASE_URL */, 5000);
+  let apiInstance = new Api("truebalance.com" /* API_BASE_URL */, 3000);
   useCaseInstance.apiInstance = apiInstance;
   useCaseInstance.storeInstance = store;
   /* useCaseInstance.initialize({

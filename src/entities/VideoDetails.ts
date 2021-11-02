@@ -11,6 +11,7 @@ class VideoDetails {
     this.description = description;
     this.length = length;
     this.url = url;
+    this.commentsList = [];
   }
   addComments(commentsList: Comments[]) {
     this.commentsList = commentsList;

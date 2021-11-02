@@ -2,7 +2,7 @@ import { addVideoComments } from "../../redux/actions/index";
 import useCaseInstance from "../index";
 import storeInstance from "../../redux/store";
 export const getVideoComments = (videoId: number) => {
-  let commentsResponse = useCaseInstance.apiInstance.commentsList();
+  let commentsResponse = useCaseInstance.apiInstance.commentsList(videoId);
   commentsResponse
     .then((response: any) => {
       if (response.status === 200) {
@@ -12,4 +12,5 @@ export const getVideoComments = (videoId: number) => {
     .catch((error: any) => {
       console.log("Error occured", error);
     });
+    return commentsResponse;
 };

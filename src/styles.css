@@ -2,3 +2,20 @@
   font-family: sans-serif;
   text-align: center;
 }
+.player-layout{
+  height:210px;
+  border: 2px solid black;
+}
+.comments{
+  height: 80px;
+  border: 2px dashed black;
+  margin-top: 10px;
+}
+.rec-thumbnail{
+  border: 2px dashed rgb(212, 17, 17);
+  height: 100px;
+  margin-top: 10px;
+}
+.recomendation-layout{
+  border: 2px dashed rgb(212, 17, 17);
+}
