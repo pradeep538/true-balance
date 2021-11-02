@@ -14,7 +14,8 @@ const Recomendations = (props: TProps) => {
                 {
                     props.VideoRecomendations.videoList.map((thumbnail: VideoInfo) => {
                         return (
-                            <div className="rec-thumbnail">
+
+                            <div key={thumbnail.title} className="rec-thumbnail">
                                 <p>thumbnail Goes here</p>
                                 <p>title: {thumbnail.title}</p>
                             </div>

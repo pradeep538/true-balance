@@ -18,7 +18,7 @@ const CommentsView = (props: TProps) => {
             <button onClick={handleCommentsVisibility}>{showComments ? "hide comments" : "show Comments"}</button>
             {
                 showComments && props.commentsList.map((comments: Comments) => {
-                    return (<div className="comments">
+                    return (<div key={comments.id} className="comments">
                         {/* <p>comments id:{comments.id}</p> */}
                         <p>messaged By: {comments.messagerName}</p>
                         <p>message: {comments.message}</p>
